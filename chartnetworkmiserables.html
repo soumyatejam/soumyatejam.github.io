@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Network Les Miserables</title>
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <div id="interface">
+        <div class="title flex-item">
+          Les Miserables Novel's Network of Characters
+        </div>
+        <div class="network-metrics flex-item">
+          <div class="metric-instruction">Choose a metric</div>
+          <select name="metrics" id="metric-select">
+            <option value="degree_centrality">Degree Centrality</option>
+            <option value="eigenvector_centrality">
+              Eigenvector Centrality
+            </option>
+            <option value="betweenness_centrality">
+              Betweenness Centrality
+            </option>
+            <option value="closeness_centrality">Closeness Centrality</option>
+            <option value="community">Community</option>
+          </select>
+          <div id="metric-description"></div>
+        </div>
+        <div class="character-focus flex-item">
+          <div class="character-info">Character Info</div>
+          <div class="character-name"></div>
+          <div class="character-description"></div>
+        </div>
+      </div>
+      <div id="network-chart"></div>
+    </div>
+    <script src="./js/charts/networkmiserables.js"></script>
+  </body>
+</html>

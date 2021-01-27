@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A Day in the Life of Students</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="sidebar-control" style="padding-right: 15px;">
+        <li id="timecnt"></li>
+        <li id="speed" class="buttons">
+          <div><button class="button current" data-val="300">Slow</button></div>
+          <div><button class="button" data-val="100">Medium</button></div>
+          <div><button class="button" data-val="20">Fast</button></div>
+        </li>
+        <li id="narrative"></li>
+        <li class="citation">
+          <p>This is a simulation of 1,000 students' average day.</p>
+        </li>
+      </ul>
+      <div id="movingbubbles-chart" class="svg-chart"></div>
+    </div>
+    <script src="./js/charts/dailylife.js"></script>
+  </body>
+</html>
